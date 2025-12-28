@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/signup.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="signup-container">
+  <form class="signup-form" id="signupForm">
+
+    <h2>Create Account</h2>
+
+    <div class="input-group">
+      <i class="fa fa-user"></i>
+      <input type="text" placeholder="Username" required>
+    </div>
+
+    <div class="input-group">
+      <i class="fa fa-envelope"></i>
+      <input type="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-group password-group">
+      <i class="fa fa-lock"></i>
+      <input type="password" id="password" placeholder="Password" required>
+      <span class="eye-icon" onclick="togglePassword()">
+        <i class="fa-solid fa-eye"></i>
+      </span>
+    </div>
+
+    <button type="submit" class="signup-btn">Sign Up</button>
+
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+  </form>
+</div>
+
+<!-- JS -->
+<script src="../js/signup.js"></script>
+
+</body>
+</html>

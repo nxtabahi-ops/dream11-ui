@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream11 - Login</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/front.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="trophy-wrapper">
+      <!-- Background Image -->
+      <img src="../assets/images/front.jpg" alt="IPL Banner" class="bg-image">
+
+      <!-- Sparkle Effects -->
+      <div class="sparkle v1"></div>
+      <div class="sparkle v2"></div>
+      <div class="sparkle v3"></div>
+      <div class="sparkle v4"></div>
+      <div class="sparkle v5"></div>
+      <div class="sparkle v6"></div>
+      <div class="sparkle v7"></div>
+      <div class="sparkle v8"></div>
+
+      <!-- Welcome Text -->
+      <div class="welcome-text">
+        <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+        <span>&nbsp;</span>
+        <span>t</span><span>o</span>
+        <span>&nbsp;</span>
+        <span>D</span><span>r</span><span>e</span><span>a</span><span>m</span><span>1</span><span>1</span>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+      <a href="login.html" class="btn login">Log In</a>
+      <a href="signup.html" class="btn signup">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="welcomeSound" src="../assets/images/front.mp3" preload="auto"></audio>
+
+  <!-- JavaScript -->
+  <script src="../js/front.js"></script>
+
+  <script>
+    // Auto play sound on load
+    window.addEventListener("load", () => {
+      const sound = document.getElementById("welcomeSound");
+      if (sound) {
+        sound.play().catch(() => {});
+      }
+    });
+  </script>
+
+</body>
+</html>

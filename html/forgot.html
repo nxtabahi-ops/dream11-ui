@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Recovery</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/forgot.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="recovery-container">
+
+    <form class="forgot-form">
+
+      <!-- Email Input -->
+      <div class="email-section">
+        <div class="input-wrapper">
+          <i class="fa fa-envelope input-icon"></i>
+          <input type="email" id="emailInput" placeholder="Enter your email" required>
+        </div>
+        <button type="button" id="sendOtpBtn">Send OTP</button>
+      </div>
+
+      <!-- OTP Section -->
+      <div class="otp-section">
+        <input type="text" maxlength="1" class="otp-box">
+        <input type="text" maxlength="1" class="otp-box">
+        <input type="text" maxlength="1" class="otp-box">
+        <input type="text" maxlength="1" class="otp-box">
+        <input type="text" maxlength="1" class="otp-box">
+        <input type="text" maxlength="1" class="otp-box">
+      </div>
+
+      <button type="button" id="verifyOtpBtn">Verify OTP</button>
+
+    </form>
+
+  </div>
+
+  <!-- JS -->
+  <script src="../js/forgot.js"></script>
+
+</body>
+</html>
